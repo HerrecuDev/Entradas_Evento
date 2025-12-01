@@ -1,6 +1,7 @@
 create table entradas_eventos.evento
 (
-    id            int            null,
+    id            int auto_increment
+        primary key,
     nombre        varchar(50)    null,
     descripcion   varchar(200)   null,
     lugar         varchar(200)   null,
@@ -9,6 +10,7 @@ create table entradas_eventos.evento
     recargo_grada decimal(10, 2) null,
     fecha_hora    datetime       null
 );
+
 
 
 create table entradas_eventos.compra_entradas

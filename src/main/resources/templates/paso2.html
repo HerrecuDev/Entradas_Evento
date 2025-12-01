@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pantalla Nº2</title>
+</head>
+<body>
+<h1> LISTA DE EVENTOS </h1>
+<form method="post" th:action="@{/evento/comprar/paso2}">
+    <fieldset>
+        <legend>Evento seleccionado</legend>
+        <div >
+
+            <label th:text="${evento.nombre}"></label>
+        </div>
+    </fieldset>
+    <div>
+
+
+        <input id="genralId" type="radio" name="zona" value="GENERAL"><label for="generaId">General</label>
+        <input id="genralId" type="radio" name="zona" value="GENERAL"><label for="generaId">General</label>
+    </div>
+    <button>Continuar</button>
+
+</form>
+</body>
+</html>
